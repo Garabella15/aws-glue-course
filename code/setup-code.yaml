@@ -16,7 +16,7 @@ Resources:
   GlueIAMRole:
     Type: AWS::IAM::Role
     Properties:
-      RoleName: AWSGlueCourse
+      RoleName: RayAWSGlueCourse
       AssumeRolePolicyDocument:
         Version: "2012-10-17"
         Statement:
@@ -93,7 +93,7 @@ Resources:
   MyAthenaWorkGroup:
     Type: AWS::Athena::WorkGroup
     Properties:
-      Name: AWSGlueCourseAthenaWorkgroup
+      Name: RayAWSGlueCourseAthenaWorkgroup
       Description: The workgroup for the johnny chivers aws glue course. 
       State: ENABLED
       WorkGroupConfiguration:
